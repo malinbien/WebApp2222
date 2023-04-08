@@ -1,0 +1,227 @@
+@mixin mobile{
+    @media screen and (max-width:480px) {
+        @content
+    }
+}
+
+@mixin Tablet{
+    @media screen and (max-width:768px) {
+        @content
+    }
+}
+
+@mixin laptop{
+    @media screen and (max-width:1280px) {
+        @content
+    }
+}
+
+$darkColor : #2f2d52;
+$lightColor : #ddddf7;
+$brightColor : #a7bcff;
+$mildColor : #5d5b8d;
+$midColor : #7b96ec;
+
+.FormContainer{
+    background-color : $brightColor;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .FormWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .Logo{
+            color: $mildColor;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+
+        .Title{
+            color: $mildColor;
+            font-size: 12px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 15px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid $brightColor;
+            &::placeholder{
+                    color: rgb(175,175,175);
+            }
+            }
+
+            button{
+                background-color: $midColor;
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            p{
+                color: $mildColor;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    
+}
+.Home{
+    // display: flex;
+    background-color: $brightColor;
+    height: 100vh;
+    width: 100%;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+
+    .Container{
+        width: 100%;
+        height: 100vh;
+        // border: 1px solid white;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+
+        .Chat{
+            flex: 2;
+            .ChatInfo{
+                height: 50px;
+                // position: fixed;
+                // width: 100vw;
+                background-color: $mildColor;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgray;
+
+                .ChatParner{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+
+            .Messages{
+                background-color: $lightColor;
+                // padding: 10px 30px;
+                height: calc(100vh - 140px);
+                overflow: scroll;
+                .Owner{
+                    .Message{
+                        display: flex;
+                        width: 97.3%;
+                        gap: 20px;
+                        padding: 20px;
+                        // margin-right: 20px;
+                        background-color: $lightColor;
+                        .MessageInfo{
+                            display: flex;
+                            flex-direction: column;
+                            color: gray;
+                            font-weight: 300;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            .Img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+                        }
+                        .MessageContent{
+                            display: flex;
+                            max-width: 90%;
+                            flex-direction: column;
+                            gap: 10px;
+                            
+                            .Img{
+                                width: 50%;
+                                // max-width: max-content;
+                            }
+
+                            .MessageText{
+                                max-width: 90%;
+                                overflow-wrap: break-word;
+                            }
+                        }
+                    }
+                    &.Me{
+                        .Message{
+                            flex-direction: row-reverse;
+                            background-color: $darkColor;
+
+                            .MessageContent{
+                                align-items: flex-end;
+
+                                .MessageText{
+                                    color: white;
+                                }
+                            }
+                        }  
+                    }
+                }
+            }
+
+            .Input{
+                height: 50px;
+                width: 100%;
+                background-color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+
+                .input{
+                    width: 80%;
+                    border: none;
+                    outline: none;
+                    color: $darkColor;
+                    left: 300px;
+                    // padding-left: 60px;
+                    &::placeholder{
+                        color: lightgray;
+                    }
+                }
+
+                .Send{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 30px;
+                    
+                    .Button{
+                        border: none;
+                        padding: 10px 15px;
+                        color: white;
+                        background-color: $brightColor;
+                    }
+                }
+            }
+        }
+    }
+}
+    

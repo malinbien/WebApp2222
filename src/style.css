@@ -1,0 +1,170 @@
+.FormContainer {
+  background-color: #a7bcff;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FormContainer .FormWrapper {
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.FormContainer .FormWrapper .Logo {
+  color: #5d5b8d;
+  font-weight: bold;
+  font-size: 24px;
+}
+.FormContainer .FormWrapper .Title {
+  color: #5d5b8d;
+  font-size: 12px;
+}
+.FormContainer .FormWrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.FormContainer .FormWrapper form input {
+  padding: 15px;
+  border: none;
+  width: 250px;
+  border-bottom: 1px solid #a7bcff;
+}
+.FormContainer .FormWrapper form input::-moz-placeholder {
+  color: rgb(175, 175, 175);
+}
+.FormContainer .FormWrapper form input::placeholder {
+  color: rgb(175, 175, 175);
+}
+.FormContainer .FormWrapper form button {
+  background-color: #7b96ec;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.FormContainer .FormWrapper form p {
+  color: #5d5b8d;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.Home {
+  background-color: #a7bcff;
+  height: 100vh;
+  width: 100%;
+}
+.Home .Container {
+  width: 100%;
+  height: 100vh;
+}
+.Home .Container .Chat {
+  flex: 2;
+}
+.Home .Container .Chat .ChatInfo {
+  height: 50px;
+  background-color: #5d5b8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: lightgray;
+}
+.Home .Container .Chat .ChatInfo .ChatParner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.Home .Container .Chat .Messages {
+  background-color: #ddddf7;
+  height: calc(100vh - 140px);
+  overflow: scroll;
+}
+.Home .Container .Chat .Messages .Owner .Message {
+  display: flex;
+  width: 97.3%;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ddddf7;
+}
+.Home .Container .Chat .Messages .Owner .Message .MessageInfo {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Home .Container .Chat .Messages .Owner .Message .MessageInfo .Img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Home .Container .Chat .Messages .Owner .Message .MessageContent {
+  display: flex;
+  max-width: 90%;
+  flex-direction: column;
+  gap: 10px;
+}
+.Home .Container .Chat .Messages .Owner .Message .MessageContent .Img {
+  width: 50%;
+}
+.Home .Container .Chat .Messages .Owner .Message .MessageContent .MessageText {
+  max-width: 90%;
+  overflow-wrap: break-word;
+}
+.Home .Container .Chat .Messages .Owner.Me .Message {
+  flex-direction: row-reverse;
+  background-color: #2f2d52;
+}
+.Home .Container .Chat .Messages .Owner.Me .Message .MessageContent {
+  align-items: flex-end;
+}
+.Home .Container .Chat .Messages .Owner.Me .Message .MessageContent .MessageText {
+  color: white;
+}
+.Home .Container .Chat .Input {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.Home .Container .Chat .Input .input {
+  width: 80%;
+  border: none;
+  outline: none;
+  color: #2f2d52;
+  left: 300px;
+}
+.Home .Container .Chat .Input .input::-moz-placeholder {
+  color: lightgray;
+}
+.Home .Container .Chat .Input .input::placeholder {
+  color: lightgray;
+}
+.Home .Container .Chat .Input .Send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+}
+.Home .Container .Chat .Input .Send .Button {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #a7bcff;
+}/*# sourceMappingURL=style.css.map */
